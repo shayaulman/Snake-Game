@@ -1,0 +1,78 @@
+* {
+    font-family: "Marker Felt";
+}
+
+body {
+    /* background-color: #006400; */
+}
+
+#container {
+    margin-top: 200px;
+    width: 320px;
+}
+
+#game-container {
+    position: relative;
+    
+    background-color:  white;
+    border: 10px solid #800000;
+    height: 420px;
+    width: 420px;
+    border-radius: 0 0 6px 6px;
+}
+
+.mini-nav {
+    width: 420px;
+    background-color: #800000;
+    border-radius: 6px 6px 0 0;
+    opacity: 0.9;
+}
+
+.snake-body {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #003300;
+    border-radius: 4px;
+}
+
+.food {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: #800000;
+    border-radius: 50px;
+}
+
+.menu { 
+    color: whitesmoke;
+    border-radius: 4px 4px 0 0;
+    background-color: #800000;
+    /* background-color:  #ffc107;; */
+}
+
+.info-container {
+    width: 100%;
+    background-color: rgba(1, 61, 21, 0.19);
+}
+
+
+.start-button {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#game-over {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    z-index: 1;
+}
+
+#footer {
+    display: fixed;
+    text-align: center;
+    bottom: 30px;
+    color:#ccc;
+}

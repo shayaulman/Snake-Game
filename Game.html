@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <title>Snake</title>
+    
+
+</head>
+    <body class="bg-success">
+        <div>
+        <div class="row" style="">
+            <div class="col-3 menu p-0 shadow-lg badge-warnings">
+                <div class="title h1 text-center text-success m-5">Snake Game</div>
+                <div class="info-container py-1 text-right">
+                    <div class="d-flex flex-wrap align-content-center justify-content-center m-5">
+                        <button class="btn btn-lg btn-outline-success m-2" type="button" id="start-game" onclick="startGame()">Start New Game!</button>
+                        <button class="btn btn-lg btn-outline-success m-2" type="button" id="pause-game">Pause</button>
+                    </div>
+                </div>
+                <div class="list-unstyled mr-2 m-5 text-right">
+                    <li class="h6">Level: <span id="" class="badge badge-danger">1</span></li>
+                    <li class="h6">Snake-Length: <span id="snake-length" class="badge badge-danger">5</span></li>
+                    <li class="h6">Speed: <span id="snake-speed" class="badge badge-danger">0px / Sec</span></li>
+                    <hr class="mt-5">
+                    <div class="d-flex justify-content-right">
+                        <li class="h6 mr-3">High Score: <span id="high-score" class="badge badge-danger">0</span></li>
+                        <li class="h6 ml-2">Last Score: <span id="last-score" class="badge badge-danger">0</span></li>
+                    </div>
+                    <hr class="mt-5">
+                    <br>
+                </div>
+                <div class="info-container text-center p-3">
+                        <span>💡</span><p class=" display-3 badge badge-warning">tip:</p>
+                    <p>Use the "Enter-Button" to start a new game, the "Space-Button" to Pause/Start</p>
+                </div>
+                <hr class="m-5">
+                <div class="text-center m-1">
+                    <p>Please send feedback...😁<a href="mailto:shayeulman@gmail.com">shayeulman@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col-9 justify-content-center">
+                <div id="container" class="mx-auto">
+                        <ul class="mini-nav justify-content-between nav p-2">
+                            <li class="ml-2 text-success">Score: <span id="score" class="badge badge-danger">0</span></li>
+                            <li class="mr-2 text-success">Level: <span id="level" class="badge badge-danger">1</span></li>
+                        </ul>
+                    <div id="game-container">
+                        <div id="game-over" class="alert alert-danger"><strong>Game Over...</strong></div>
+                        <div id="snake-container">
+                            <div class="snake-body"></div>
+                            <div class="snake-body"></div>
+                            <div class="snake-body"></div>
+                            <div class="snake-body"></div>
+                            <div class="snake-body"></div>
+                        </div>
+                        <div id="food-container"></div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="JS/app.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</body>
+</html>
